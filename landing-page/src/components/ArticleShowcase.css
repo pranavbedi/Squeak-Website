@@ -5,7 +5,7 @@
 .article-showcase {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem auto;
   padding-top: 3rem;
   font-family: 'Noto Serif', serif;
   max-width: 1000px;
@@ -45,4 +45,22 @@
   font-size: 1.1rem;
   line-height: 1.6;
   color: #555;
+}
+
+/* Add responsive layout for mobile devices */
+@media (max-width: 768px) {
+  .article-showcase {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .article-image-container {
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .article-text {
+    text-align: center;
+  }
 }
