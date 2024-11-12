@@ -1,19 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
+import logo from '../assets/Squeak.png';
 import './NavBar.css';
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('#Home');
-
-  const handleLinkClick = (href) => {
-    setActiveLink(href);
-  };
-
   return (
     <nav className="navbar navbar-light bg-white">
-      <a className="navbar-logo" href="#">
-        <h2>Squeak</h2>
+      <a className="navbar-brand" href="#">
+        <img
+          src={logo}
+          alt="Squeak Logo"
+          className="navbar-logo"
+        />
       </a>
-      <button className="join-waitlist-button">Join Waitlist</button>
     </nav>
   );
 };
