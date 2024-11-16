@@ -1,7 +1,13 @@
 import React from 'react';
 import './HeroSection.css';
 
-const HeroSection = () => {
+const HeroSection = () => { 
+  
+  const handleWaitlist = () => {
+    window.open('https://forms.gle/7H5fWkGJHbQqo9Rz8');
+  };
+
+
   return (
     <section className="hero">
       <div className="hero-content">
@@ -13,8 +19,8 @@ const HeroSection = () => {
 
         {/* Waitlist Signup Section */}
         <div className="waitlist-signup">
-          <input type="email" placeholder="Enter your email" className="email-input" />
-          <button className="signup-button">Join the Waitlist </button>
+          {/*<input type="email" placeholder="Enter your email" className="email-input" />*/}
+		  <button onClick={handleWaitlist} className="signup-button">Join the Waitlist </button>
         </div>
       </div>
 
